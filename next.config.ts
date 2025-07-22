@@ -1,25 +1,17 @@
-import type { NextConfig } from "next"
+/** @type {import('next').NextConfig} */
+const config = {
+  reactStrictMode: true,
 
-const nextConfig: NextConfig = {
-  eslint: {
-    // не останавливать сборку, если есть ошибки ESLint
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    // не останавливать сборку, если есть ошибки TypeScript
-    ignoreBuildErrors: true,
-  },
+  // Позволяем сборке завершаться даже при ESLint / TS ошибках –
+  // так захотел заказчик.
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
+
+  // Изображения без оптимизации, + паттерн для внешних URL.
   images: {
-    // отключаем оптимизацию изображений, чтобы избежать ошибок на build-time
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.pexels.com",
-        pathname: "/photos/**",
-      },
-    ],
+    remotePatterns: [{ protocol: "https", hostname: "**" }],
   },
 }
 
-export default nextConfig
+export default config
