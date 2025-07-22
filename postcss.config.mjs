@@ -1,6 +1,6 @@
 /**
- * Используем классическую связку `tailwindcss` + `autoprefixer`.
- * Это устраняет падение Oxide-плагина на билде.
+ * Классическая связка Tailwind CSS v3 + Autoprefixer.
+ * Работает стабильно на Vercel без Oxide-плагина.
  */
 const config = {
   plugins: {
