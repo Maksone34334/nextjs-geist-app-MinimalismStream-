@@ -34,33 +34,33 @@ A sleek, black-and-white streaming platform with Web3 integration, built with Ne
 ### Installation
 
 1. Clone the repository:
-```bash
+\`\`\`bash
 git clone [your-repo-url]
 cd minimalist-streaming-platform
-```
+\`\`\`
 
 2. Install dependencies:
-```bash
+\`\`\`bash
 npm install
-```
+\`\`\`
 
 3. Configure environment variables:
-```bash
+\`\`\`bash
 cp .env.local.example .env.local
 # Edit .env.local with your configuration
-```
+\`\`\`
 
 4. Start the development server:
-```bash
+\`\`\`bash
 npm run dev
-```
+\`\`\`
 
 5. Open [http://localhost:8000](http://localhost:8000) in your browser
 
 ## 🔧 Configuration
 
 ### Environment Variables
-```bash
+\`\`\`bash
 # Web3 Configuration
 NEXT_PUBLIC_MONAD_RPC_URL=https://monad-testnet.drpc.org
 NEXT_PUBLIC_MONAD_CHAIN_ID=10143
@@ -69,7 +69,7 @@ NEXT_PUBLIC_MONAD_EXPLORER_URL=https://testnet-explorer.monad.xyz
 # Application Settings
 NEXT_PUBLIC_APP_NAME=Minimalist Streaming Platform
 NEXT_PUBLIC_APP_URL=http://localhost:8000
-```
+\`\`\`
 
 ### MONAD Testnet Setup
 1. Add MONAD testnet to your wallet:
@@ -133,7 +133,7 @@ NEXT_PUBLIC_APP_URL=http://localhost:8000
 
 ## 📁 Project Structure
 
-```
+\`\`\`
 src/
 ├── app/
 │   ├── layout.tsx          # Root layout with navigation
@@ -155,7 +155,7 @@ src/
 │   └── web3.ts            # Web3 integration utilities
 └── public/
     └── demo-audio/        # Test audio files
-```
+\`\`\`
 
 ## 🎨 Color Scheme
 
